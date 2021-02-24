@@ -1,0 +1,119 @@
+// Universal Affects
+body {
+    font-family: 'Dosis', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+// For Boxes
+
+.first-box{
+    width: 600px;
+    height: 400px;
+    background-color: yellow;
+
+    // border:size style color
+    border: 3px solid darkgray;
+
+    .third-box{
+        width: 100px;
+        height: 300px;
+        background-color: gainsboro;
+
+        // border:size style color
+        border: 3px solid darkgray;
+    }
+}
+
+.second-box{
+    width: 400px;
+    height: 250px;
+    background-color: pink;
+
+    // border:size style color
+    border: 3px solid darkgray;
+
+    .fourth-box{
+        width: 350px;
+        height: 120px;
+        background-color: purple;
+
+        // border:size style color
+        border: 3px solid darkgray;
+    }
+}
+
+.cls{
+    text-decoration: line-through;
+}
+
+.fifth-box{
+    width: 550px;
+    height: 450px;
+    background-color: lightskyblue;
+
+    // border:size style color
+    border: 3px solid darkgray;
+
+    .sixth-box{
+        width: 450px;
+        height: 150px;
+        background-color: turquoise;
+
+        // border:size style color
+        border: 3px solid darkgray;
+    }
+}
+
+.seventh-box {
+
+    width: 300px;
+    height: 250px;
+    background-color: orange;
+
+    // border:size style color
+    border: 3px solid darkgray;
+
+    .eighth-box{
+        width: 100px;
+        height: 70px;
+        background-color: blue;
+
+        // border:size style color
+        border: 3px solid darkgray;
+    }
+}
+
+.ninth-box{
+    width: 680px;
+    height: 500px;
+    background-color: grey;
+
+    // border:size style color
+    border: 3px solid orange;
+
+    .tenth-box{
+        width: 450px;
+        height: 300px;
+        background-color: yellow;
+
+        // border:size style color
+        border: 3px solid darkgray;
+    }
+}
