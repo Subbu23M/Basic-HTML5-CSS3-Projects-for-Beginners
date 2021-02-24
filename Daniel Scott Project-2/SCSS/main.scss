@@ -1,0 +1,177 @@
+// Colors
+$backgroundColor:linear-gradient(#FC5E55, #FA4083);
+$textColor:#FFF;
+
+// $cardBoxShadow:<offset-x> <offset-y> <blur-radius> color
+// rgba-red,green,blue and alpha defines a opacity number between 0.0 (fully transparent) and 1.0 (fully opaque)
+$cardBoxShadow:5px 5px 10px rgba(0, 0, 0, 0.228);
+
+// Text Shadow:<offset-x> <offset-y> <blur-radius> color
+// rgba-red,green,blue and opacity defines a number between 0.0 (fully transparent) and 1.0 (fully opaque)
+$headerOneTextShadow:0px 2px 2px rgba(0, 0, 0, 0.228);
+
+$buttonTextColor:#FA4083;
+$buttonHoverColor:rgb(29, 213, 103);
+$dropdownTextColor:#FA4083;
+
+// Universal Affects
+
+li {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+p{
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+}
+
+body {
+    font-family: 'Dosis', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: $backgroundColor;
+    background-repeat: no-repeat;
+
+    // If we use background-size: cover; it will cut off the sides of the image, preserving the aspect ratio, and also filling in the space.
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+header{
+    nav{
+        .nav-links{
+            ul{
+                li a{
+                    color: $textColor;
+                    font-size: 1.1rem;
+
+                    // border:size style color
+                    border: 2px solid $textColor;
+                }
+
+                .dropdown-menu{
+                    a{
+                        color: $dropdownTextColor;
+                        border: none;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.special{
+    padding: 0.49rem;
+}
+
+hr{
+    height: 1px;
+    background-color: lightgray;
+}
+
+main{
+    h1{
+        text-shadow: $headerOneTextShadow;
+    }
+
+    .button{
+        a{
+            color: $buttonTextColor;
+            outline: none;
+
+            &:hover{
+                background-color: $buttonHoverColor;
+                color: black;
+            }
+        }
+        
+    }
+}
+
+.card-one{
+    background: url(../Images/image-background-card1-b.jpg);
+    // background-position: center;
+    background-repeat: no-repeat;
+
+    // If we use background-size: cover; it will cut off the sides of the image, preserving the aspect ratio, and also filling in the space.
+    background-size: cover;
+
+    cursor: pointer;
+
+    .fa-motorcycle{
+        // On Y-axis for individual elements
+        align-self: center;
+    }
+}
+
+.card-two{
+    background: url(../Images/image-background-card2-b.jpg);
+    // background-position: center;
+    background-repeat: no-repeat;
+
+    // If we use background-size: cover; it will cut off the sides of the image, preserving the aspect ratio, and also filling in the space.
+    background-size: cover;
+
+    cursor: pointer;
+
+    .fa-motorcycle{
+        // On Y-axis for individual elements
+        align-self: center;
+    }
+
+}
+
+.card-three{
+    background: url(../Images/image-background-card3-b.jpg);
+    // background-position: center;
+    background-repeat: no-repeat;
+
+    // If we use background-size: cover; it will cut off the sides of the image, preserving the aspect ratio, and also filling in the space.
+    background-size: cover;
+
+    cursor: pointer;
+
+    .fa-motorcycle{
+        // On Y-axis for individual elements
+        align-self: center;
+    }
+
+}
+
+.quo{
+    // border:size style color
+    border: 1px solid #FFF;
+
+    padding: 3rem;
+    margin: 1rem;
+}
+
+.details{
+    width: 1120px;
+    height: 45px;
+    
+    // border:size style color
+    border: 1px solid gray;
+
+    padding: 1rem;
+
+    &:focus{
+        outline: none;
+    }
+}
+
+textarea{
+    width: 1120px;
+    height: 200px;
+    padding: 1rem;
+}
