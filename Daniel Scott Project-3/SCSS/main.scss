@@ -1,0 +1,80 @@
+// Colors
+
+$bodyBackgroundColor:#EBEBEB;
+$textColor:#fff;
+
+// rgb stands for red,green and blue.
+$headerBackgroundColor:rgb(60, 60, 60);
+$cardColor:rgb(43, 226, 147);
+
+// Universal Affects
+
+li {
+    list-style: none;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+p {
+    font-size: 1.3rem;
+    letter-spacing: 0.5px;
+}
+
+// End of Universal Affects
+
+body {
+    font-family: 'Dosis', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: $bodyBackgroundColor;
+}
+
+header{
+    nav{
+
+        width: 1349px;
+        height: 100px;
+        background-color: $headerBackgroundColor;
+
+        // Convert column into row
+        display: flex;
+
+        // On X-axis
+        justify-content: space-around;
+
+        padding: 2rem;
+
+        .nav-links{
+            ul{
+                // Convert column into row
+                display: flex;
+
+                li {
+                    a{
+                        margin: 1rem;
+                        font-size: 1.2rem;
+
+                        // border:size style color
+                        border: 1px solid $textColor;
+
+                        padding: 0.2rem;
+
+                        &:hover{
+                            color: $textColor!important;
+                        }
+                    }
+
+                } 
+            }
+
+        }
+    }
+}
+
+.card-footer{
+    background-color: $cardColor;
+}
